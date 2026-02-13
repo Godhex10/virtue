@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Primary SEO -->
+<title>Happy Valentine's Day Baby ❤️</title>
+  <meta name="description" content="A little love note from Prince." />
+
+  <!-- Open Graph (Facebook, WhatsApp, iMessage, LinkedIn, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Virtue❤️" />
+  <meta property="og:description" content="I made this for you." />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card (Twitter/X) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Virtue❤️" />
+  <meta name="twitter:description" content="I made this for you." />
+  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+
+  </head>
+
+  <body>
+    <div>
+      <!-- Background slideshow layers -->
+      <div id="bgA" class="bg-layer"></div>
+      <div id="bgB" class="bg-layer"></div>
+      
+      <!-- Hearts + notes canvas -->
+      <canvas id="testCanvas"></canvas>
+    </div>
+
+    <!-- Audio (put your song in /assets/song.mp3 or change the src) -->
+    <audio id="moodSong" preload="auto">
+      <source src="./statelines.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Modal 1: Accept song -->
+    <div class="modal fade" id="moodModal" tabindex="-1" role="dialog" aria-labelledby="moodModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content mood-modal">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="moodModalLabel">🙂 Just one thing…</h5>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">
+              <b>Prince</b> wants you to play a song to set the mood.<br/>
+              Do you accept? <b>Yes</b> or <b>Yes</b>.
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-yes" id="yesBtn1">Yes</button>
+            <button type="button" class="btn btn-yes" id="yesBtn2">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Headphones -->
+    <div class="modal fade" id="headphonesModal" tabindex="-1" role="dialog" aria-labelledby="headphonesModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content mood-modal">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="headphonesModalLabel">🎧 Headphones please</h5>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">For the full effect, please use headphones.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-ok" id="okHeadphones">Okay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (full, not slim), Popper, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1524180/codepen-template-1.0.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

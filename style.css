@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Slideshow background layers */
+.bg-layer{
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1600ms ease-in-out;
+  z-index: 1;
+}
+
+/* Canvas overlay for hearts + notes */
+canvas#testCanvas{
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  z-index: 2;
+}
+
+/* Pretty modal theme */
+.mood-modal {
+  background: rgba(20, 10, 18, 0.95);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+.btn-yes, .btn-ok {
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: 600;
+}
+
+.btn-yes {
+  background: #ff4d6d;
+  color: #fff;
+  border: none;
+}
+.btn-yes:hover { background: #ff2f57; color: #fff; }
+
+.btn-ok {
+  background: #ffffff;
+  color: #312;
+  border: none;
+}
+.btn-ok:hover { background: #f2f2f2; color: #312; }
