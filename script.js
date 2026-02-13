@@ -86,7 +86,7 @@ function init() {
   noteText.x = canvas.width / 2;
   noteText.y = canvas.height / 2;
   noteText.alpha = 0; // hidden until OK
-  noteText.shadow = new createjs.Shadow("rgba(0,0,0,0.55)", 0, 2, 10); // better readability on photos
+  noteText.shadow = new createjs.Shadow("rgba(255, 0, 136, 0.85)", 0, 0, 28);// better readability on photos
   overlay.addChild(noteText);
   applyResponsiveText();
 
