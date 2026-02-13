@@ -18,8 +18,8 @@ var slideshowTimer = null;
 // =========================
 var noteText;
 var noteIndex = 0;
-var NOTE_INTERVAL = 30000; // 30s
-var TYPE_SPEED = 125;
+var NOTE_INTERVAL = 15000; // 30s
+var TYPE_SPEED = 80;
 
 var notes = [
   "My Sweet girl…\n4 months ago, I didn’t know you would be in my life.\nYou’ve been on my mind more than you realize.",
