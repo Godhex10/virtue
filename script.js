@@ -22,10 +22,15 @@ var NOTE_INTERVAL = 15000; // 30s
 var TYPE_SPEED = 80;
 
 var notes = [
-  "My Sweet girl…\n4 months ago, I didn’t know you would be in my life.\nYou’ve been on my mind more than you realize.",
-  "The funny thing is…\nI don’t even need a special reason.\nYour existence alone is enough to make my day softer.",
+  "My Sweet girl…\n4 months ago, I could live my life without anybody.\nFast forward to today, I can’t seem to look at life without you in it.\nI didn’t know I was this capable of love 🫠.",
+  "The funny thing is…\nI don’t even need a special reason to be with you.\nYour existence alone is enough to make my day softer.",
   "Every time I talk to you,\nit feels like the world gets quieter.\nLike everything stressful just steps back for a moment.",
+  "You’re the sweetest, kindest, most loving person I have ever known.\nYou make kindness, forgiveness and love  look so easy",
+  "You’ve taught me beautiful things in this life. You’ve changed me for the better.",
   "I love the way you make simple things feel special.\nA conversation.\nA laugh.\nEven silence feels comfortable with you.",
+  "I love the way you answer your phone when I call you “Heyyy baaaabbyyy”. its so Beautiful ❤️. \nI Love the way you make me feel. I love the way you hug me.",
+  "I love the way you hold me whenever we’re together.",
+  "Baby.. \n I love your eyes. /n I love your hair. /n I love your smile. /n I love your intelligence and smartness. /n I love your hot body. /n Baby, I Love you !!!.",
   "You’re the kind of person I prayed for without knowing your name.\nAnd now that you’re here,\nI don’t want to take you for granted.",
   "I’m not perfect.\nBut if loving you is something I get to do,\nthen I promise I’ll always try to love you properly.",
   "You deserve patience.\nYou deserve reassurance.\nYou deserve someone who chooses you every day… and means it.",
@@ -359,3 +364,4 @@ function setupModals() {
 }
 
 init();
+
