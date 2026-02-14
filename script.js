@@ -30,7 +30,7 @@ var notes = [
   "I love the way you make simple things feel special.\nA conversation.\nA laugh.\nEven silence feels comfortable with you.",
   "I love the way you answer your phone when I call you “Heyyy baaaabbyyy”. its so Beautiful ❤️. \nI Love the way you make me feel. I love the way you hug me.",
   "I love the way you hold me whenever we’re together.",
-  "Baby.. \nI love your eyes. /nI love your hair. /nI love your smile. /nI love your intelligence and smartness. /nI love your hot body. /nBaby, I Love you !!!.",
+  "Baby..\nI love your eyes.\nI love your hair.\nI love your smile.\nI love your intelligence and smartness.\nI love your hot body.\nBaby, I Love you !!!.",
   "You’re the kind of person I prayed for without knowing your name.\nAnd now that you’re here,\nI don’t want to take you for granted.",
   "I’m not perfect.\nBut if loving you is something I get to do,\nthen I promise I’ll always try to love you properly.",
   "You deserve patience.\nYou deserve reassurance.\nYou deserve someone who chooses you every day… and means it.",
@@ -89,7 +89,7 @@ function init() {
   noteText.textAlign = "center";
   noteText.textBaseline = "middle";
   noteText.x = canvas.width / 2;
-  noteText.y = canvas.height / 2;
+  noteText.y = canvas.height * 0.40;
   noteText.alpha = 0; // hidden until OK
   noteText.shadow = new createjs.Shadow("rgba(255, 0, 136, 0.85)", 0, 0, 28);// better readability on photos
   overlay.addChild(noteText);
@@ -98,7 +98,7 @@ function init() {
   window.addEventListener("resize", function () {
     resizeCanvas();
     noteText.x = canvas.width / 2;
-    noteText.y = canvas.height * 0.40;
+    noteText.y = canvas.height / 2;
     applyResponsiveText();
   });
 
@@ -364,6 +364,7 @@ function setupModals() {
 }
 
 init();
+
 
 
 
