@@ -98,7 +98,7 @@ function init() {
   window.addEventListener("resize", function () {
     resizeCanvas();
     noteText.x = canvas.width / 2;
-    noteText.y = canvas.height / 2;
+    noteText.y = canvas.height * 0.40;
     applyResponsiveText();
   });
 
@@ -364,5 +364,6 @@ function setupModals() {
 }
 
 init();
+
 
 
