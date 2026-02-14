@@ -40,7 +40,7 @@ var notes = [
   "I want to be the place you run to,\nnot the place you recover from.\nI want you to feel safe with me.",
   "If I could bottle up the way you make me feel,\nI swear it would be the sweetest thing in the world.\nThat’s what you are to me.",
   "So yeah…\nThis is me saying it clearly:\nI care about you deeply.\nAnd I’m really happy you’re in my life.",
-  "Happy Valentines day my baby Girl.\nI Love you sooo mcch❤️."
+  "Happy Valentines day my baby Girl.\nI Love you sooo much❤️."
 ];
 
 var typingTimer = null;
@@ -371,6 +371,7 @@ function setupModals() {
 }
 
 init();
+
 
 
 
