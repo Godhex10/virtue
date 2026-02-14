@@ -21,6 +21,9 @@ var noteIndex = 0;
 var NOTE_INTERVAL = 20000; // 20s
 var TYPE_SPEED = 80;
 
+// ✅ GLOBAL padding from top (so applyResponsiveText can see it)
+var NOTE_TOP_PADDING = 40; // px from top (try 30–60)
+
 var notes = [
   "My Sweet girl…\n4 months ago, I could live my life without anybody.\nFast forward to today, I can’t seem to look at life without you in it.\nI didn’t know I was this capable of love 🫠.",
   "The funny thing is…\nI don’t even need a special reason to be with you.\nYour existence alone is enough to make my day softer.",
@@ -28,7 +31,7 @@ var notes = [
   "You’re the sweetest, kindest, most loving person I have ever known.\nYou make kindness, forgiveness and love  look so easy",
   "You’ve taught me beautiful things in this life. You’ve changed me for the better.",
   "I love the way you make simple things feel special.\nA conversation.\nA laugh.\nEven silence feels comfortable with you.",
-  "I love the way you answer your phone when I call you “Heyyy baaaabbyyy”. its so Beautiful ❤️. \nI Love the way you make me feel. I love the way you hug me.",
+  "I love the way you answer your phone when I call you “Heyyy baaaabbyyy”. its so Beautiful ❤️.\nI Love the way you make me feel. I love the way you hug me.",
   "I love the way you hold me whenever we’re together.",
   "Baby..\nI love your eyes.\nI love your hair.\nI love your smile.\nI love your intelligence and smartness.\nI love your hot body.\nBaby, I Love you !!!.",
   "You’re the kind of person I prayed for without knowing your name.\nAnd now that you’re here,\nI don’t want to take you for granted.",
@@ -37,7 +40,7 @@ var notes = [
   "I want to be the place you run to,\nnot the place you recover from.\nI want you to feel safe with me.",
   "If I could bottle up the way you make me feel,\nI swear it would be the sweetest thing in the world.\nThat’s what you are to me.",
   "So yeah…\nThis is me saying it clearly:\nI care about you deeply.\nAnd I’m really happy you’re in my life.",
-  "Happy Valentines day my baby Girl.\n I Love you sooo mcch❤️."
+  "Happy Valentines day my baby Girl.\nI Love you sooo mcch❤️."
 ];
 
 var typingTimer = null;
@@ -85,19 +88,22 @@ function init() {
   createHearts();
 
   // notes text
-  var NOTE_TOP_PADDING = 40; // px from top (try 30–60)
   noteText = new createjs.Text("", "bold 30px Arial", "#ffffff");
   noteText.textAlign = "center";
   noteText.textBaseline = "top";
   noteText.x = canvas.width / 2;
   noteText.y = NOTE_TOP_PADDING;
   noteText.alpha = 0; // hidden until OK
-  noteText.shadow = new createjs.Shadow("rgba(255, 0, 136, 0.85)", 0, 0, 28);// better readability on photos
+  noteText.shadow = new createjs.Shadow("rgba(255, 0, 136, 0.85)", 0, 0, 28);
   overlay.addChild(noteText);
   applyResponsiveText();
 
   window.addEventListener("resize", function () {
     resizeCanvas();
+
+    // optional: adapt padding a bit on resize (keeps it nice on small phones)
+    // NOTE_TOP_PADDING = Math.max(30, Math.round(window.innerHeight * 0.06));
+
     noteText.x = canvas.width / 2;
     noteText.y = NOTE_TOP_PADDING;
     applyResponsiveText();
@@ -295,7 +301,7 @@ function applyResponsiveText() {
   noteText.text = wrapTextByWidth(noteText.text, maxWidth, noteText.font);
 
   noteText.x = canvas.width / 2;
-  noteText.y = NOTE_TOP_PADDING; // 👈 keep it near the top always
+  noteText.y = NOTE_TOP_PADDING; // keep it near the top always
 }
 
 // =========================
@@ -365,8 +371,6 @@ function setupModals() {
 }
 
 init();
-
-
 
 
 
