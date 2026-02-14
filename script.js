@@ -18,7 +18,7 @@ var slideshowTimer = null;
 // =========================
 var noteText;
 var noteIndex = 0;
-var NOTE_INTERVAL = 15000; // 30s
+var NOTE_INTERVAL = 20000; // 20s
 var TYPE_SPEED = 80;
 
 var notes = [
@@ -30,14 +30,14 @@ var notes = [
   "I love the way you make simple things feel special.\nA conversation.\nA laugh.\nEven silence feels comfortable with you.",
   "I love the way you answer your phone when I call you “Heyyy baaaabbyyy”. its so Beautiful ❤️. \nI Love the way you make me feel. I love the way you hug me.",
   "I love the way you hold me whenever we’re together.",
-  "Baby.. \n I love your eyes. /n I love your hair. /n I love your smile. /n I love your intelligence and smartness. /n I love your hot body. /n Baby, I Love you !!!.",
+  "Baby.. \nI love your eyes. /nI love your hair. /nI love your smile. /nI love your intelligence and smartness. /nI love your hot body. /nBaby, I Love you !!!.",
   "You’re the kind of person I prayed for without knowing your name.\nAnd now that you’re here,\nI don’t want to take you for granted.",
   "I’m not perfect.\nBut if loving you is something I get to do,\nthen I promise I’ll always try to love you properly.",
   "You deserve patience.\nYou deserve reassurance.\nYou deserve someone who chooses you every day… and means it.",
   "I want to be the place you run to,\nnot the place you recover from.\nI want you to feel safe with me.",
   "If I could bottle up the way you make me feel,\nI swear it would be the sweetest thing in the world.\nThat’s what you are to me.",
   "So yeah…\nThis is me saying it clearly:\nI care about you deeply.\nAnd I’m really happy you’re in my life.",
-  "Happy Valentines day my baby Girl.\n I Love you sooo much❤️."
+  "Happy Valentines day my baby Girl.\n I Love you sooo mcch❤️."
 ];
 
 var typingTimer = null;
@@ -364,4 +364,5 @@ function setupModals() {
 }
 
 init();
+
 
