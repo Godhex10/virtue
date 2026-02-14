@@ -85,11 +85,12 @@ function init() {
   createHearts();
 
   // notes text
+  var NOTE_TOP_PADDING = 40; // px from top (try 30–60)
   noteText = new createjs.Text("", "bold 30px Arial", "#ffffff");
   noteText.textAlign = "center";
-  noteText.textBaseline = "middle";
+  noteText.textBaseline = "top";
   noteText.x = canvas.width / 2;
-  noteText.y = canvas.height * 0.40;
+  noteText.y = NOTE_TOP_PADDING;
   noteText.alpha = 0; // hidden until OK
   noteText.shadow = new createjs.Shadow("rgba(255, 0, 136, 0.85)", 0, 0, 28);// better readability on photos
   overlay.addChild(noteText);
@@ -98,7 +99,7 @@ function init() {
   window.addEventListener("resize", function () {
     resizeCanvas();
     noteText.x = canvas.width / 2;
-    noteText.y = canvas.height / 2;
+    noteText.y = NOTE_TOP_PADDING;
     applyResponsiveText();
   });
 
@@ -294,7 +295,7 @@ function applyResponsiveText() {
   noteText.text = wrapTextByWidth(noteText.text, maxWidth, noteText.font);
 
   noteText.x = canvas.width / 2;
-  noteText.y = canvas.height / 2;
+  noteText.y = NOTE_TOP_PADDING; // 👈 keep it near the top always
 }
 
 // =========================
@@ -364,6 +365,7 @@ function setupModals() {
 }
 
 init();
+
 
 
 
