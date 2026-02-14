@@ -22,7 +22,7 @@ var NOTE_INTERVAL = 20000; // 20s
 var TYPE_SPEED = 80;
 
 // ✅ GLOBAL padding from top (so applyResponsiveText can see it)
-var NOTE_TOP_PADDING = 200; // px from top (try 30–60)
+var NOTE_TOP_PADDING = 150; // px from top (try 30–60)
 
 var notes = [
   "My Sweet girl…\n4 months ago, I could live my life without anybody.\nFast forward to today, I can’t seem to look at life without you in it.\nI didn’t know I was this capable of love 🫠.",
@@ -371,6 +371,7 @@ function setupModals() {
 }
 
 init();
+
 
 
 
